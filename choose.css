@@ -1,0 +1,152 @@
+
+body{
+    margin:0;
+    padding: 0;
+    background-image: url('CB.png');
+    background-size: 100%;
+    background-repeat: no-repeat; 
+}
+.container{
+    width:25vh;
+    height:40vh;
+    position: relative;
+    margin-right: 50px;
+
+}
+.container1{
+    width:25vh;
+    height:40vh;
+    position: relative;
+    margin-right: 50px;
+
+}
+.container2{
+    width:25vh;
+    height:40vh;
+    position: relative;
+    margin-right: 50px;
+
+}
+
+.box1{
+    background-image: url('papieros.png');
+    background-size: cover;
+    width:25vh;
+    height:40vh;
+    
+    position: absolute;
+    text-align: center;
+    transition: transform 500ms;
+    backface-visibility: hidden;
+
+    border:solid black 0.25rem;
+    border-radius: 5%;
+}
+.box2{
+    background-image: url('alhohol.jpg');
+    background-size: cover;
+    width:25vh;
+    height:40vh;
+    
+    position: absolute;
+    text-align: center;
+    transition: transform 500ms;
+    backface-visibility: hidden;
+
+    border:solid black 0.25rem;
+    border-radius: 5%;
+}
+.box3{
+    background-image: url('narkotyk.jpg');
+    background-size: cover;
+    width:25vh;
+    height:40vh;
+    
+    position: absolute;
+    text-align: center;
+    transition: transform 500ms;
+    backface-visibility: hidden;
+
+    border:solid black 0.25rem;
+    border-radius: 5%;
+}
+.box1-back{
+    background-image: url('ps.png');
+    width:25vh;
+    height:40vh;
+    position: absolute;
+    
+    border:solid black 0.25rem;
+    border-radius: 5%;
+    overflow: hidden;
+    transition: transform 500ms;
+    backface-visibility: hidden;
+}
+.box2-back{
+    background-image: url('ak.png');
+    width:25vh;
+    height:40vh;
+    position: absolute;
+    
+    border:solid black 0.25rem;
+    border-radius: 5%;
+    overflow: hidden;
+    transition: transform 500ms;
+    backface-visibility: hidden;
+}
+.box3-back{
+    background-image: url('nk.png');
+    width:25vh;
+    height:40vh;
+    position: absolute;
+    
+    border:solid black 0.25rem;
+    border-radius: 5%;
+    overflow: hidden;
+    transition: transform 500ms;
+    backface-visibility: hidden;
+}
+
+.box1{
+    transform: perspective(900px) rotateY(0deg);
+}
+.box1-back{
+    transform: perspective(900px) rotateY(180deg);
+}
+.box2{
+    transform: perspective(900px) rotateY(0deg);
+}
+.box2-back{
+    transform: perspective(900px) rotateY(180deg);
+}
+.box3{
+    transform: perspective(900px) rotateY(0deg);
+}
+.box3-back{
+    transform: perspective(900px) rotateY(180deg);
+}
+
+.container:hover .box1 {
+    transform: perspective(900px) rotateY(-180deg);
+}
+.container:hover .box1-back{
+    transform: perspective(900px) rotateY(0deg);
+}
+.container1:hover .box2 {
+    transform: perspective(900px) rotateY(-180deg);
+}
+.container1:hover .box2-back{
+    transform: perspective(900px) rotateY(0deg);
+}
+.container2:hover .box3 {
+    transform: perspective(900px) rotateY(-180deg);
+}
+.container2:hover .box3-back{
+    transform: perspective(900px) rotateY(0deg);
+}
+
+.containers{
+    display: flex;
+    justify-content: center;
+    margin-top:50vh;
+}

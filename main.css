@@ -1,0 +1,57 @@
+body{
+    margin:0;
+    padding: 0;
+    background-image: url('hp2.png');
+    background-size: 100%;
+    background-repeat: no-repeat; 
+    position: relative; 
+   
+}
+button{
+    background-color:#e8ca12;
+
+    width:25vh;
+    height:8vh;
+    transition: 2s;
+
+    border:none;
+    border: solid black 0.25vh;
+    
+}
+.wrapper{
+    width:25vh;
+    height:8vh;
+    top: 65vh;
+    left:20vh;
+    position: absolute;
+    font-size:larger;  
+    transition: 2s;
+}
+
+button:hover{
+    background-color:#ab940e;
+}
+
+.wrapper2{
+    width:12.5vh;
+    height:4vh;
+    font-size: smaller;
+    position: absolute;
+    top:3vh;
+    left:87vw;
+
+}
+.aboutBtn{
+    width:15vh;
+    height:4vh;
+    background-color: white;
+    transition: 2s;
+    border:none;
+    border: solid black 0.25vh;
+
+}
+.aboutBtn:hover{
+    background-color:wheat;
+    
+}
+
