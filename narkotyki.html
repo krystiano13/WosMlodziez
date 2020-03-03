@@ -31,30 +31,35 @@
         .text{
             display:flex;
             justify-content: center;
-            font-size:larger;
+            font-size:x-large;
+            text-align: center;
+            padding-left: 20vw;
+            padding-right: 20vw;
         }
         *{
-            transition: 1s;
+            transition:background-color 1s;
         }
 
     </style>
     <script>
         const i1 = document.querySelector('.i1');
         const i2 = document.querySelector('.i2');
-        var przyczyny = 'xd';
-        var konsekwencje = 'jd';
+        var przyczyny = 'Branie narkotyków coraz częściej ma charakter towarzyski. Zwiększa się liczba młodych ludzi zażywających je weekendowo, by uatrakcyjnić spotkanie na imprezie. Często młodzież próbuje narkotyków na wakacjach. Sprzyja temu wyrwanie się spod kontroli rodziców, nowe znajomości. Zwykle sięga wtedy po różne środki rozluźniające – od marihuany po heroinę.Bunt przeciwko zasadom.Presja grupy rówieśniczej-lęk przed odrzuceniem przez kolegów';
+        var konsekwencje = 'Uzależnienie od narkotyków wśród dzieci i młodzieży ma liczne konsekwencje, które związane są nie tylko z prawidłowym funkcjonowaniem organizmu, ale również przekładają się na sposób ich życia i zachowania. Używki w postaci substancji narkotycznych powodują silne uzależnienie psychiczne i fizyczne, dlatego cała aktywność młodych ludzi skierowana jest na pozyskiwanie kolejnych dawek środków narkotycznych. Sytuacja ta nierzadko jest przyczyną konfliktów z prawem, gdyż pod wpływem środków psychoaktywnych młodzi ludzie dopuszczają się kradzieży, włamań bądź wdają się w bójki. Ponadto, uzależnienie od narkotyków skutkuje zachowaniami ryzykownymi. Długotrwałe zażywanie substancji psychoaktywnych wiąże się z utratą zahamowań oraz godności i wartości moralnych. Wynikiem tego jest przestępczość i prostytucja wśród nieletnich, której celem jest najczęściej pozyskanie środków na kupno kolejnych dawek narkotyków.Za posiadanie narkotyków grozi kara od 3 do 5 lat więzienia lub przebywania w zakładzie poprawczym i grzywna. Produkcja narkotyków jest zagrożona karą więzienia do 3 lat i grzywną. Handel narkotykami jest zagrożony karą więzienia do 10 lat. Udzielanie, nakłanianie do użycia narkotyków grozi więzieniem do 5 lat. (Podstawa prawna: Ustawa o przeciwdziałaniu narkomanii z 29 lipca 2005 r.)';
         let p = document.querySelector('p');
 
         i1.addEventListener('click',function(){
             p.innerHTML = przyczyny;
             i1.style.backgroundColor = "grey";
             i2.style.backgroundColor = "darkgrey";
+            p.style.fontSize ='x-large';
         });
         
         i2.addEventListener('click',function(){
             p.innerHTML = konsekwencje;
             i2.style.backgroundColor = "grey";
             i1.style.backgroundColor = "darkgrey";
+            p.style.fontSize ='smaller';
         });
     </script>
 </html>

@@ -31,30 +31,55 @@
         .text{
             display:flex;
             justify-content: center;
-            font-size:larger;
+            font-size:x-large;
+            text-align: center;
+            padding-left: 20vw;
+            padding-right: 20vw;
         }
         *{
-            transition: 1s;
+            transition: background-color 1s;
         }
 
     </style>
     <script>
         const i1 = document.querySelector('.i1');
         const i2 = document.querySelector('.i2');
-        var przyczyny = 'xd';
-        var konsekwencje = 'jd';
+        var przyczyny = '„Skoro ojciec pije, ja również mogę”-dziecko alkoholika' + 
+        ' Presja grupy rówieśniczej-lęk przed odrzuceniem przez kolegów' +
+        ' Łatwy dostęp do alkoholu' +
+        ' Bunt przeciwko zasadom ' +
+        ' Traktowanie alkoholi jako "panaceum" na swoje smutki i problemy.';
+        var konsekwencje = 'Osoba nieletnia o wiele szybciej uzależnia się od alkoholu niż osoba dorosła.' +
+'brak sprawności intelektualnej,' +
+'zaburzenia koncentracji uwagi,zaburzenia pamięci,zwiększoną męczliwość,wzmożoną drażliwość,pobudliwość,' +
+'skłonność do irytacji,agresywność,obniżenie aktywności psychicznej,problemy w nauce,niezdyscyplinowanie,' +
+'problemy wychowawcze.' + 'Bez wykształcenia, bez poczucia sensu życia, bez celu dziewczyny nadużywające alkoholu nierzadko wnikają w środowiska patologiczne, np. wchodzą w świat przestępczy i zarabiają na prostytucji,' + 
+'przypadkowe kontakty seksualne pod wpływem alkoholu kończą się niechcianą ciążą albo chorobą AIDS.Picie alkoholu jest przejawem demoralizacji.Za akty demoralizacji uznaje się niedostosowanie społeczne i w takiej sytuacji odbywa się sprawa w sądzie o demoralizację. Sąd przyjmuje, że osoba nieletnia nie do końca zdaje sobie sprawę ze swojego postępowania i w dużej mierze za jej czyny odpowiadają rodzice. Dlatego sąd rodzinny bada czy są oni wydolni wychowawczo, gdyż musi jasno znaleźć przyczynę, dlaczego doszło do aktu demoralizacji.' 
+
+
+
+
+
+
+
+
+
+
+
         let p = document.querySelector('p');
 
         i1.addEventListener('click',function(){
             p.innerHTML = przyczyny;
             i1.style.backgroundColor = "grey";
             i2.style.backgroundColor = "darkgrey";
+            p.style.fontSize ='x-large';
         });
         
         i2.addEventListener('click',function(){
             p.innerHTML = konsekwencje;
             i2.style.backgroundColor = "grey";
             i1.style.backgroundColor = "darkgrey";
+            p.style.fontSize ='smaller';
         });
     </script>
 </html>

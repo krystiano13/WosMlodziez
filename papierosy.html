@@ -32,7 +32,10 @@
         .text{
             display:flex;
             justify-content: center;
-            font-size:larger;
+            font-size:x-large;
+            text-align: center;
+            padding-left: 20vw;
+            padding-right: 20vw;
         }
         *{
             transition: 1s;
@@ -42,8 +45,16 @@
     <script>
         const i1 = document.querySelector('.i1');
         const i2 = document.querySelector('.i2');
-        var przyczyny = 'xd';
-        var konsekwencje = 'jd';
+        var przyczyny = 'Negatywny wzorzec przekazywany przez rodziców' +
+        'chęć zaimponowania towarzyszom' +
+        'według młodzieży "palenie ich uspokaja i odpręża"' +
+        'na uzależnienie od nikotyny bardziej podatni są młodzi ludzie ze skłonnością do depresji i zachowań agresywnych. ';
+        var konsekwencje = '" muszą z nim żyć na co dzień"' +
+        'nikotyna odpowiada za uzależnienie od papierosów.' +
+        'Palenie papierosów osłabia układ immunologiczny i zwiększa podatność na choroby.' +
+        'palenie papierosów sprzyja rozwojowi chorób nowotworowych, w szczególności raka płuc. Skraca także życie palacza oraz obniża jego jakość ' +
+        'Osoby, które zaczęły palić przed 15. rokiem życia i palą 20-30 papierosów dziennie żyją średnio o 8 lat krócej.' +
+        'Szkodliwe działanie dymu tytoniowego na towarzyszy (bierne palenie).Na palącą młodzież może nawet czekać wizyta w sądzie rodzinnym i nieletnich, gdzie będzie wyjaśniane m.in. to w jaki sposób młode osoby weszły w posiadanie wyrobów tytoniowych. ';
         let p = document.querySelector('p');
 
         i1.addEventListener('click',function(){
