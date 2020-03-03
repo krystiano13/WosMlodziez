@@ -70,21 +70,39 @@ body{
     border:solid black 0.25rem;
     border-radius: 5%;
 }
+.box4{
+    background-image: url('wandalizm.jpg');
+    background-size: cover;
+    width:25vh;
+    height:40vh;
+    
+    position: absolute;
+    text-align: center;
+    transition: transform 500ms;
+    backface-visibility: hidden;
+
+    border:solid black 0.25rem;
+    border-radius: 5%;
+}
 .box1-back{
     background-image: url('ps.png');
     width:25vh;
     height:40vh;
     position: absolute;
+
+    background-size: cover;
     
     border:solid black 0.25rem;
     border-radius: 5%;
     overflow: hidden;
     transition: transform 500ms;
     backface-visibility: hidden;
+    max-height: 100%;
 }
 .box2-back{
     background-image: url('ak.png');
     width:25vh;
+    background-size: cover;
     height:40vh;
     position: absolute;
     
@@ -93,18 +111,37 @@ body{
     overflow: hidden;
     transition: transform 500ms;
     backface-visibility: hidden;
+    max-height: 100%;
 }
 .box3-back{
     background-image: url('nk.png');
     width:25vh;
     height:40vh;
     position: absolute;
+
+    background-size: cover;
     
     border:solid black 0.25rem;
     border-radius: 5%;
     overflow: hidden;
     transition: transform 500ms;
     backface-visibility: hidden;
+    max-height: 100%;
+}
+.box4-back{
+    background-image: url('wm.png');
+    width:25vh;
+    height:40vh;
+    position: absolute;
+
+    background-size: cover;
+    
+    border:solid black 0.25rem;
+    border-radius: 5%;
+    overflow: hidden;
+    transition: transform 500ms;
+    backface-visibility: hidden;
+    max-height: 100%;
 }
 
 .box1{
@@ -123,6 +160,12 @@ body{
     transform: perspective(900px) rotateY(0deg);
 }
 .box3-back{
+    transform: perspective(900px) rotateY(180deg);
+}
+.box4{
+    transform: perspective(900px) rotateY(0deg);
+}
+.box4-back{
     transform: perspective(900px) rotateY(180deg);
 }
 
@@ -144,9 +187,37 @@ body{
 .container2:hover .box3-back{
     transform: perspective(900px) rotateY(0deg);
 }
+.container3:hover .box4 {
+    transform: perspective(900px) rotateY(-180deg);
+}
+.container3:hover .box4-back{
+    transform: perspective(900px) rotateY(0deg);
+}
 
 .containers{
     display: flex;
     justify-content: center;
     margin-top:50vh;
+
 }
+
+@keyframes wejscie {
+    0%{
+        filter:grayscale(100)
+    }
+    100%{
+        filter: grayscale(0);
+    }
+}
+@keyframes wejscie1 {
+    0%{
+        transform: translateY(250px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+.box1 ,.box2 ,.box3{
+    animation: wejscie 3s 0.5s forwards;
+}
+

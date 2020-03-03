@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+    </head>
+    <body>
+        <div class="przyciski">
+            <img class="i1" src="Przyczyny napis.png">
+            <img class="i2" src="Konsekwencje napis.png">
+        </div>
+        <div class="text">
+            <p></p>
+        </div>
+        
+    </body>
+    <style>
+        body{
+            margin:0;
+            padding: 0;
+            background-image: url('papierosyBackground.png');
+            background-size: 100%;
+            background-repeat: no-repeat; 
+        }
+
+        .przyciski{
+            display:flex;
+            justify-content:center;
+            margin-top:30vh;
+            background-color: darkgrey;
+            box-sizing: border-box
+        }
+        .text{
+            display:flex;
+            justify-content: center;
+            font-size:larger;
+        }
+        *{
+            transition: 1s;
+        }
+
+    </style>
+    <script>
+        const i1 = document.querySelector('.i1');
+        const i2 = document.querySelector('.i2');
+        var przyczyny = 'xd';
+        var konsekwencje = 'jd';
+        let p = document.querySelector('p');
+
+        i1.addEventListener('click',function(){
+            p.innerHTML = przyczyny;
+            i1.style.backgroundColor = "grey";
+            i2.style.backgroundColor = "darkgrey";
+        });
+        
+        i2.addEventListener('click',function(){
+            p.innerHTML = konsekwencje;
+            i2.style.backgroundColor = "grey";
+            i1.style.backgroundColor = "darkgrey";
+        });
+    </script>
+</html>
